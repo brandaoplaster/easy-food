@@ -9,7 +9,6 @@ services:
   website:
     depends_on:
       - 'postgres'
-      - 'redis'
     build: .
     command: bash start
     ports:
