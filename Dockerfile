@@ -2,8 +2,8 @@ FROM ruby:2.5-slim
 # Install our dependencies
 RUN apt-get update && apt-get install -qq -y --no-install-recommends \
       build-essential nodejs libpq-dev
-# Set our patch
-ENV INSTALL_PATH /one-messenger
+# Set our path
+ENV INSTALL_PATH /easy-food
 # Create directory
 RUN mkdir -p $INSTALL_PATH
 # Set our path as the main directory
