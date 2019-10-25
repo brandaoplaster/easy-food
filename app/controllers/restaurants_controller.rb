@@ -13,6 +13,9 @@ class RestaurantsController < ApplicationController
   end
 
   def search
+    @restaurants = restaurant.search(name_or_description_cont: params[:q]).result
+    @restaurants = @restaurants.near(params[:city]) if params[:city]
+    render json: @restaurants
   end
 
   private
