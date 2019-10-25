@@ -9,6 +9,7 @@ class RestaurantsController < ApplicationController
   end
 
   def show
+    render json: @restaurant, product_category: true
   end
 
   def search
