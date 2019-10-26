@@ -1,5 +1,9 @@
 class OrdersController < ApplicationController
+
+  before_action :set_order, only: :show
+
   def show
+    render json: @order
   end
 
   private
