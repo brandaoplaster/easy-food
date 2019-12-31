@@ -31,6 +31,7 @@ gem 'activestorage'
 gem 'ransack'
 gem 'geocoder', '~> 1.5', '>= 1.5.1'
 gem 'active_model_serializers', '~> 0.10.2'
+gem 'rack-cors'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
