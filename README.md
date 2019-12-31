@@ -1,24 +1,43 @@
-# README
+# Easy Food
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An API that provides restaurants near the user, where he can choose restaurant
+by category and can place your orders.
 
-Things you may want to cover:
+With the following features:
+* Restaurants by Category
+* Restaurant Details
+* Restaurant rating
+* Place Orders
 
-* Ruby version
+## Prerequisites
 
-* System dependencies
+>You just need have docker-compose installed in your machine.
 
-* Configuration
+## Getting Started
+>To get the app running, run the following commands:
 
-* Database creation
+  ```
+    docker-compose build
+    docker-compose run --rm website bundle install
+    docker-compose run --rm website bundle exec rails db:create
+    docker-compose run --rm website bundle exec rails db:migrate
+    docker-compose up
+  ```
+  
+>API access by following link after docker up
 
-* Database initialization
+  ```
+  http://localhost:3001
+  ```
 
-* How to run the test suite
+## Built With
 
-* Services (job queues, cache servers, search engines, etc.)
+* [Ruby on Rails](https://rubyonrails.org/) - Dependency Management
 
-* Deployment instructions
+## Authors
 
-* ...
+* **Lucas Brandão** - [brandaoplaster](https://github.com/brandaoplaster)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
