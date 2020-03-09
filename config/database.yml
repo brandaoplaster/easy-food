@@ -7,12 +7,12 @@ default: &default
 
 development:
   <<: *default
-  database: onebitchat_development
+  database: easy-food_development
 
 test:
   <<: *default
-  database: onebitchat_exchance_test
+  database: easy-food_test
 
 production:
   <<: *default
-  database: onebitchat_exchance_production
+  database: easy-food_production
