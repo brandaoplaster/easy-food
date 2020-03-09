@@ -83,7 +83,7 @@ GEM
     pg (0.21.0)
     polyamorous (2.3.0)
       activerecord (>= 5.0)
-    puma (3.12.2)
+    puma (3.12.4)
     rack (2.0.8)
     rack-cors (1.1.1)
       rack (>= 2.0.0)
@@ -152,7 +152,7 @@ DEPENDENCIES
   geocoder (~> 1.5, >= 1.5.1)
   listen (~> 3.0.5)
   pg (~> 0.18)
-  puma (~> 3.0)
+  puma (~> 3.12)
   rack-cors
   rails (~> 5.2.0)
   ransack
